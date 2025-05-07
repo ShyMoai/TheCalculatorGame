@@ -41,7 +41,7 @@ function getRebirth() {
         prestige = 1
         prestigeMulti = 1
         upgrade = 1
-        points = 1
+        points = 0
         document.getElementById("pointCounter").innerHTML = "Points : " + points + " points"
         document.getElementById("pointButton").innerHTML = "Get " + upgrade * Math.pow(prestigeMulti,rebirth) + " points"
         document.getElementById("upgradeCounter").innerHTML = "Upgrades : " + upgrade
