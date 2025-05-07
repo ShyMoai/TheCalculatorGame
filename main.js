@@ -10,6 +10,7 @@ function getPoint() {
     points += upgrade * Math.pow(prestigeMulti,rebirth)
     document.getElementById("prestigeButton").innerHTML = "Prestige and get " +  points / 10000 + " prestige points (" + Math.sqrt(points / 10000) + " multiplier)<br> You need at least 10000 points to prestige"
     document.getElementById("pointCounter").innerHTML = "Points : " + points + " points"
+    document.getElementById("rebirthButton").innerHTML = "Rebirth to get " +  Math.log10(points / 1000000000) + " rebirth points. Your prestige multiplier is raised to the power of your rebirth points <br>You need at least 1e9 points to rebirth"
 }
 function getUpgrade() {
     if (points >= 100) {
@@ -19,6 +20,7 @@ function getUpgrade() {
     document.getElementById("pointButton").innerHTML = "Get " + upgrade * Math.pow(prestigeMulti,rebirth) + " points"
     document.getElementById("upgradeCounter").innerHTML = "Upgrades : " + upgrade
     document.getElementById("prestigeButton").innerHTML = "Prestige and get " +  points / 10000 + " prestige points (" + Math.sqrt(points / 10000) + " multiplier)<br> You need at least 10000 points to prestige"
+    document.getElementById("rebirthButton").innerHTML = "Rebirth to get " +  Math.log10(points / 1000000000) + " rebirth points. Your prestige multiplier is raised to the power of your rebirth points <br>You need at least 1e9 points to rebirth"
     }
 }
 function getPrestige() {
@@ -33,6 +35,7 @@ function getPrestige() {
         document.getElementById("prestigeCounter").innerHTML = "Prestige points : " + prestige
         document.getElementById("prestigeMultiCounter").innerHTML = "Prestige multiplier : " + prestigeMulti
         document.getElementById("prestigeButton").innerHTML = "Prestige and get " +  points / 10000 + " prestige points (" + Math.sqrt(points / 10000) + " multiplier)<br> You need at least 10000 points to prestige"
+        document.getElementById("rebirthButton").innerHTML = "Rebirth to get " +  Math.log10(points / 1000000000) + " rebirth points. Your prestige multiplier is raised to the power of your rebirth points <br>You need at least 1e9 points to rebirth"
     }
 }
 function getRebirth() {
