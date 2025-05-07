@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="pointCounter">Points : 0</h1>
+    <button id="pointButton" onclick="getPoint()">Get 1 point</button>
+    <h1 id="upgradeCounter">Upgrades : 1</h1>
+    <button id="upgradeButton" onclick="getUpgrade()">Get 1 upgrade <br> (costs 100 points)</button>
+    <h1 id="prestigeCounter">Prestige points : 0</h1>
+    <h1 id="prestigeMultiCounter">Prestige multiplier : 1</h1>
+    <button id="prestigeButton" onclick="getPrestige()">Prestige and get 0 prestige points (1 multiplier)<br> You need at least 10000 points to prestige</button>
+    <script src="main.js" charset="utf-8" type="text/javascript"></script>
+    <h1 id="rebirthCounter">Rebirth points : 0</h1>
+    <h1 id="totalMultiplier">Total multiplier : 1</h1>
+    <button id="rebirthButton" onclick="getRebirth()">Rebirth to get 0 rebirth points. Your prestige multiplier is raised to the power of your rebirth points <br>You need at least 1e9 points to rebirth</button>
+    <h2>Formulas</h2>
+    <p>Points per click = upgrades * prestigemultiplier ^ rebirthpoints</p>
+    <p>Prestige points on prestige = points / 10000</p>
+    <p>Prestige multiplier = √prestigepoints</p>
+    <p>Rebirth points on reset = log(points / 1e9)</p>
+    <p>Total multiplier = prestigemultiplier ^ rebirthpoitns</p>
+</body>
+</html>
